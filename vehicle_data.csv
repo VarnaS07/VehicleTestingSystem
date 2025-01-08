@@ -1,0 +1,14 @@
+Vehicle Type,VehicleID,Make,Model,TerrainType,Year,LoadCapacity,CurrentLoad
+LightDutyTruck,1001,CAT,772,onRoad,2023,5000,2500
+LightDutyTruck,1002,Ford,F-150,onRoad,2022,6000,3000
+LightDutyTruck,1003,RAM,1500,onRoad,2021,7000,3500
+LightDutyTruck,1004,GMC,Sierra,onRoad,2020,8000,4000
+LightDutyTruck,1005,Toyota,Tacoma,offRoad ,2019,7500,3500
+LightDutyTruck,1006,Nissan,Frontier,offRoad ,2023,6500,3200
+LightDutyTruck,1007,CHEVROLET COLORADO,COLORADO,offRoad ,2022,720,370
+HeavyDutyTruck,1008,Honda,Ridgeline,onRoad,2021,680,330
+HeavyDutyTruck,1009,Hyundai,Santa Cruz,onRoad,2023,700,340
+HeavyDutyTruck,10110,Jeep ,Gladiator,onRoad,222,720,360
+HeavyDutyTruck,2001,Mack ,Anthem ,offRoad ,223,120000,900
+HeavyDutyTruck,20002,Volvo,VNL ,offRoad ,22222,150000,110000
+HeavyDutyTruck,20003,Freightliner,Cascadia ,offRoad ,22221,140000,10
