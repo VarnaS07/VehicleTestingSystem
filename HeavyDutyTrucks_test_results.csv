@@ -1,0 +1,19 @@
+Make,Model,VehicleID,Test Name,Status,Metric,Suggestion
+Honda,Ridgeline,1008,Load Test,Fail,load cpty: 680,Increase load capacity!
+Honda,Ridgeline,1008,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Honda,Ridgeline,1008,Durability Test,Pass,Wear & Tear: 50,Durability is satisfactory.
+Hyundai,Santa Cruz,1009,Load Test,Fail,load cpty: 700,Increase load capacity!
+Hyundai,Santa Cruz,1009,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Hyundai,Santa Cruz,1009,Durability Test,Pass,Wear & Tear: 50,Durability is satisfactory.
+Jeep ,Gladiator,10110,Load Test,Fail,load cpty: 720,Increase load capacity!
+Jeep ,Gladiator,10110,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Jeep ,Gladiator,10110,Durability Test,Pass,Wear & Tear: 50,Durability is satisfactory.
+Mack ,Anthem ,2001,Load Test,Fail,load cpty: 120000,Increase load capacity!
+Mack ,Anthem ,2001,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Mack ,Anthem ,2001,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+Volvo,VNL ,20002,Load Test,Pass,load cpty: 150000,Good load capacity!
+Volvo,VNL ,20002,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Volvo,VNL ,20002,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+Freightliner,Cascadia ,20003,Load Test,Fail,load cpty: 140000,Increase load capacity!
+Freightliner,Cascadia ,20003,Terrain Test,Pass,offRoad: 0.5,Good off road capability!
+Freightliner,Cascadia ,20003,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.

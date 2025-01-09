@@ -1,0 +1,22 @@
+Make,Model,VehicleID,Test Name,Status,Metric,Suggestion
+CAT,772,1001,Load Test,Pass,load cpty: 5000,Good load capacity!
+CAT,772,1001,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+CAT,772,1001,Durability Test,Pass,Wear & Tear: 50,Durability is satisfactory.
+Ford,F-150,1002,Load Test,Pass,load cpty: 6000,Good load capacity!
+Ford,F-150,1002,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+Ford,F-150,1002,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+RAM,1500,1003,Load Test,Fail,load cpty: 7000,Increase load capacity!
+RAM,1500,1003,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+RAM,1500,1003,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+GMC,Sierra,1004,Load Test,Fail,load cpty: 8000,Increase load capacity!
+GMC,Sierra,1004,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+GMC,Sierra,1004,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+Toyota,Tacoma,1005,Load Test,Fail,load cpty: 7500,Increase load capacity!
+Toyota,Tacoma,1005,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+Toyota,Tacoma,1005,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+Nissan,Frontier,1006,Load Test,Fail,load cpty: 6500,Increase load capacity!
+Nissan,Frontier,1006,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+Nissan,Frontier,1006,Durability Test,Fail,Wear & Tear: 80,Consider reducing load or improving materials.
+CHEVROLET COLORADO,COLORADO,1007,Load Test,Pass,load cpty: 720,Good load capacity!
+CHEVROLET COLORADO,COLORADO,1007,Terrain Test,Fail,onRoad: 0.2,Not suitable for off road!
+CHEVROLET COLORADO,COLORADO,1007,Durability Test,Pass,Wear & Tear: 50,Durability is satisfactory.
