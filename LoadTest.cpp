@@ -7,7 +7,7 @@ using namespace std;
 class LoadTest: public TestScenario
 {
     public:
-        LoadTest(Vehicle *v) : TestScenario("Load Test",v)
+        LoadTest(shared_ptr<Vehicle> v) : TestScenario("Load Test",v)
         {
 
         }

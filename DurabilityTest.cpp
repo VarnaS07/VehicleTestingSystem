@@ -6,7 +6,7 @@ using namespace std;
 class DurabilityTest : public TestScenario 
 {
 public:
-    DurabilityTest(Vehicle* v) : TestScenario("Durability Test",v) {}
+    DurabilityTest(shared_ptr<Vehicle> v) : TestScenario("Durability Test",v) {}
 
     TestResult runTest() override 
     {

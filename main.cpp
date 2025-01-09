@@ -6,7 +6,7 @@
 #include "HeavyDutyTrucks.cpp"
 using namespace std;
 
-Vehicle* getDataFromCSV(const string& line) 
+shared_ptr<Vehicle> getDataFromCSV(const string& line) 
 {
     stringstream ss(line);
     string vehicleType;
@@ -36,9 +36,9 @@ Vehicle* getDataFromCSV(const string& line)
     ss >> currentLoad;
 
     if (vehicleType == "LightDutyTruck") {
-        return new LightDutyTrucks(id, make, model, terrainType, year, loadCapacity, currentLoad);
+        return make_shared<LightDutyTrucks>(id, make, model, terrainType, year, loadCapacity, currentLoad);
     } else if (vehicleType == "HeavyDutyTruck") {
-        return new HeavyDutyTrucks(id, make, model, terrainType, year, loadCapacity, currentLoad);
+        return make_shared<HeavyDutyTrucks>(id, make, model, terrainType, year, loadCapacity, currentLoad);
     }
 
     return nullptr; 
@@ -58,11 +58,10 @@ int main()
 
     while (getline(inputFile,line)) 
     {
-        Vehicle* vehicle = getDataFromCSV(line);
+        shared_ptr<Vehicle> vehicle = getDataFromCSV(line);
         if (vehicle) 
         {
-            vehicle->performTest(); 
-            delete vehicle; 
+            vehicle->performTest();  
         }
     }
 

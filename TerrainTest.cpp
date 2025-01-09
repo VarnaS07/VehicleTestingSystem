@@ -7,7 +7,7 @@ using namespace std;
 class TerrainTest : public TestScenario
 {
     public:
-        TerrainTest(Vehicle *v): TestScenario("Terrain Test",v)
+        TerrainTest(shared_ptr<Vehicle> v): TestScenario("Terrain Test",v)
         {
 
         }

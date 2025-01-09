@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <memory>
 #include "Vehicle.cpp"
 #include "TestResult.cpp"
 #include "LoadTest.cpp"
@@ -7,7 +8,7 @@
 #include "DurabilityTest.cpp"
 using namespace std;
 
-class HeavyDutyTrucks : public Vehicle
+class HeavyDutyTrucks : public Vehicle, public enable_shared_from_this<HeavyDutyTrucks>
 {
     public:
         HeavyDutyTrucks(double id, string mk, string mdl, string terrain, int yr, int capacity, int current): Vehicle(id, mk, mdl,"offRoad",yr, capacity, current)
@@ -17,9 +18,9 @@ class HeavyDutyTrucks : public Vehicle
         void performTest() override
         {
             cout<<"\n Heavy Duty Trucks Testing.....";
-            LoadTest loadTest(this);
-            TerrainTest terrainTest(this);
-            DurabilityTest durabilityTest(this);
+            LoadTest loadTest(shared_from_this());
+            TerrainTest terrainTest(shared_from_this());
+            DurabilityTest durabilityTest(shared_from_this());
 
             TestResult loadResult = loadTest.runTest();
             TestResult terrainResult = terrainTest.runTest();
@@ -27,7 +28,7 @@ class HeavyDutyTrucks : public Vehicle
 
             cout << "\nLoad Test Result: " << loadResult.getStatus();
             cout << "\nTerrain Test Result: " << terrainResult.getStatus();
-            cout<<"\nDurability Test Result"<<durabilityResult.getStatus();
+            cout<<"\nDurability Test Result:"<<durabilityResult.getStatus();
             saveAllResultsToCSV(loadResult, terrainResult, durabilityResult);
         }
 
@@ -71,11 +72,11 @@ class HeavyDutyTrucks : public Vehicle
                         << (durabilityResult.getSuggestions().empty() ? "N/A" : durabilityResult.getSuggestions().front()) << "\n";
 
                 outFile.close();
-                cout << "Results saved to test_results.csv" << endl;
+                cout << "\nResults saved to test_results.csv" << endl;
             } 
             else
             {
-                cerr << "Unable to open file for writing." << endl;
+                cerr << "\nUnable to open file for writing." << endl;
             }
         }
 };
