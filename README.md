@@ -12,6 +12,8 @@ OOP Concepts Used:
 Encapsulation: Classes like Vehicle, TestScenario, and TestResult encapsulate related attributes and behaviors.
 Inheritance: Extend TestScenario into specific tests like LoadTest, TerrainTest, and DurabilityTest. Polymorphism: Implement different testing methods for various vehicle types.
 
+![VehicleTestingSystem](https://github.com/user-attachments/assets/83f67f55-b809-4b89-a6a3-2b6a278a51e5)
+
 Input: vehicle_data.csv
 
 Output: HeavyDutyTruck.csv and LightDutyTruck.csv 
