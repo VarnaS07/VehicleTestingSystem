@@ -40,6 +40,10 @@ class Vehicle
         {
             return terrainType;
         }
+        int getCurrentLoad() const
+        {
+            return currentLoad;
+        }
         bool isOverLoaded()
         {
             return currentLoad>loadCapacity;

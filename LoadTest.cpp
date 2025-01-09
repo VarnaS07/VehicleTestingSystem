@@ -14,7 +14,7 @@ class LoadTest: public TestScenario
 
         TestResult runTest() override
         {
-            if(vehicle->getLoadCapacity() >1000)
+            if(vehicle->getCurrentLoad() > (vehicle->getLoadCapacity()/2))
             {
                 TestResult result("Pass");
                 result.addMetric("load cpty:",vehicle->getLoadCapacity());
